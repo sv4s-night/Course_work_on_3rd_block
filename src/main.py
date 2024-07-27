@@ -1,5 +1,6 @@
-# from src.utils import receiving_data
 from src.views import get_greeting
+from src.data_source import receiving_data
+
 
 # def main():
 #     """Главная функция"""
@@ -10,23 +11,28 @@ from src.views import get_greeting
 
 def main():
     """ Главная функция возвращающую JSON-ответ"""
-    """1.Приветствие в формате "???", где ??? — «Доброе утро» / «Добрый день» / «Добрый вечер» / «Доброй ночи» в зависимости от текущего времени."""
-    welcome = get_greeting()
+
+    welcome = get_greeting()    # переменная приветствия с учетом времени суток
+
+    data_frame = receiving_data()    # dataframe с данными
+
+
+    info_cards = bank_card_information(data_frame)
+    """2. По каждой карте:                      bank_card_information
+                        последние 4 цифры карты;
+                        общая сумма расходов;
+                        кешбэк (1 рубль на каждые 100 рублей)."""
 
 
 
-    """2. По каждой карте:
-                            последние 4 цифры карты;
-                            общая сумма расходов;
-                            кешбэк (1 рубль на каждые 100 рублей)."""
+    """3. Топ-5 транзакций по сумме платежа.    top_transactions"""
 
+    """4. Курс валют.                           exchange_rate"""
 
-    """3. Топ-5 транзакций по сумме платежа."""
+    """5. Стоимость акций из S&P500.            stock_price"""
 
-    """4. Курс валют."""
-
-    """5. Стоимость акций из S&P500."""
-    return welcome
+    return welcome  # возврат Json-файл с {welcom},
+                    # {bank_card_information},{top_transactions},{exchange_rate},{stock_price}
 
 
 
