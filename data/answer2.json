@@ -1,0 +1,90 @@
+{
+  "expenses": {
+    "total_amount": 32101,
+    "main": [
+      {
+        "category": "Супермаркеты",
+        "amount": 17319
+      },
+      {
+        "category": "Фастфуд",
+        "amount": 3324
+  },
+      {
+        "category": "Топливо",
+        "amount": 2289
+      },
+      {
+        "category": "Развлечения",
+        "amount": 1850
+      },
+      {
+        "category": "Медицина",
+        "amount": 1350
+      },
+      {
+        "category": "Остальное",
+        "amount": 2954
+      }
+    ],
+    "transfers_and_cash": [
+      {
+        "category": "Наличные",
+        "amount": 500
+      },
+      {
+        "category": "Переводы",
+        "amount": 200
+      }
+    ]
+  },
+  "income": {
+    "total_amount": 54271,
+    "main": [
+      {
+        "category": "Пополнение_BANK007",
+        "amount": 33000
+      },
+      {
+        "category": "Проценты_на_остаток",
+        "amount": 1242
+      },
+      {
+        "category": "Кэшбэк",
+        "amount": 29
+      }
+    ]
+  },
+  "currency_rates": [
+    {
+      "currency": "USD",
+      "rate": 73.21
+    },
+    {
+      "currency": "EUR",
+      "rate": 87.08
+    }
+  ],
+  "stock_prices": [
+    {
+      "stock": "AAPL",
+      "price": 150.12
+    },
+    {
+      "stock": "AMZN",
+      "price": 3173.18
+    },
+    {
+      "stock": "GOOGL",
+      "price": 2742.39
+    },
+    {
+      "stock": "MSFT",
+      "price": 296.71
+    },
+    {
+      "stock": "TSLA",
+      "price": 1007.08
+    }
+  ]
+}

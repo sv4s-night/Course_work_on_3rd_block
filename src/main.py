@@ -1,11 +1,35 @@
-from src.utils import receiving_data
+# from src.utils import receiving_data
+from src.views import get_greeting
+
+# def main():
+#     """Главная функция"""
+#     dframe = receiving_data()
+#     return dframe
+
 
 
 def main():
-    """Главная функция"""
-    dframe = receiving_data()
-    return dframe
+    """ Главная функция возвращающую JSON-ответ"""
+    """1.Приветствие в формате "???", где ??? — «Доброе утро» / «Добрый день» / «Добрый вечер» / «Доброй ночи» в зависимости от текущего времени."""
+    welcome = get_greeting()
+
+
+
+    """2. По каждой карте:
+                            последние 4 цифры карты;
+                            общая сумма расходов;
+                            кешбэк (1 рубль на каждые 100 рублей)."""
+
+
+    """3. Топ-5 транзакций по сумме платежа."""
+
+    """4. Курс валют."""
+
+    """5. Стоимость акций из S&P500."""
+    return welcome
+
+
 
 
 if __name__ == "__main__":
-    main()
+    print(main())
